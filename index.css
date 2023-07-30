@@ -1,0 +1,130 @@
+body
+{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    overflow-y: hidden;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+h1
+{
+    color:gold;
+    display: flex;
+    justify-content: center;
+}
+
+.Choice
+{
+    display: flex;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.Rock,.Paper,.Scissor
+{
+    width: 120px;
+    height: 140px;
+    transform: rotate(90deg);
+    transition: transform .5s;
+
+}
+
+.img-dis
+{
+    width: 120px;
+    height: 140px;
+    transform: rotate(90deg);
+
+}
+
+
+.Rock:hover,.Scissor:hover,.Paper:hover
+{
+    transform: scale(1.4);
+    filter: drop-shadow(16px 16px 5px gold);
+
+
+}
+
+.flip
+{
+    transform: scaleX(-1) rotate( 90deg);
+
+}
+
+.Game
+{
+    display: flex;
+    flex-direction: column;
+}
+.Choices
+{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.Your-Choice,.Ai-Choice
+{
+    border: 2px solid gold;
+    padding: 0px 20px;
+    height: 140px;
+    width: 120px;
+}
+
+.Score
+{
+    color: gold;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.Your-Score
+{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.Result
+{
+    display: flex;
+    justify-content: center;
+}
+
+.endScreen
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.Restart
+{
+    padding: 20px 40px;
+    background-color: gold;
+    color: black;
+    border-radius: 100px;
+}
+
+.Restart:hover
+{
+    background-color: rgb(194, 165, 0);
+    transition: scale .5s;
+    scale: 1.1;
+}
+

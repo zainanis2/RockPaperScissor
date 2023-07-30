@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
     <title>Rock,Paper,Scissor</title>
 </head>
 <body>
-    
+    <div id="Check">
+    <div>
+        <h1>you dare to challenge your A.I masters </h1>
+    </div>
+
+    <div class="Choice">
+        <div >
+            <img class="Rock" id="Rock" src="img/rock.png" alt="">
+        </div>
+        <div >
+            <img id="Paper" class="Paper" src="img/paper.png" alt="">
+        </div>
+        <div>
+            <img  class="Scissor" id="Scissor" src="img/scissor.png" alt="">
+        </div>
+
+
+    </div>
+    <div class="Game">
+        <div id="Result" class="Result"></div>
+        <div class="Score">
+            <div  class="Your-Score">
+                <h2>Player</h2>
+                <h2 id="Your-Score"></h4>
+
+            </div>
+            <div  class="Your-Score">
+                <h2>A.I</h2>
+                <h2 id="Ai-Score"></h4>
+
+
+            </div>
+
+        </div>
+        <div class="Choices">
+            <div id="Your-Choice" class="Your-Choice">
+
+            </div>
+            <div id="Ai-Choice" class="Ai-Choice">
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="endScreen">
+<h1 id="Winner"></h1>
+
+<div id="Restart" class="Restart"> 
+    PLAY AGAIN
+</div>
+</div>
+
 </body>
 </html>
